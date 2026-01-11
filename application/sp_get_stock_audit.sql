@@ -8,6 +8,7 @@ CREATE PROCEDURE `sp_get_stock_audit` (
     IN in_scenario    VARCHAR(255),
     IN in_incident    VARCHAR(255),
     IN in_store       INT)
+    
 BEGIN
     SELECT *
     FROM (
