@@ -48,6 +48,12 @@ class Template extends MX_Controller {
 		$this->load->view('login', $data);
 	}
 
+    public function dashboard_web($data)
+	{ 
+		$data['setting'] = $this->template_model->setting();
+		$this->load->view('dashboard_web', $data);
+	}
+
 
 	  private function current_version(){
 

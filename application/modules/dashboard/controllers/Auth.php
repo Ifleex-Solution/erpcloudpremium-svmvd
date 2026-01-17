@@ -211,6 +211,14 @@ class Auth extends MX_Controller
         }
     }
 
+     public function dashboard_web()
+    {
+          $data['title']    = display('login');
+
+          echo Modules::run('template/dashboard_web', $data);
+
+    }
+
     public function logout()
     {
         //destroy session
